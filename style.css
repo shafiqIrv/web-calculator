@@ -13,7 +13,7 @@ body {
     width: 18.75rem;
     background: rgba(96, 95, 95, 0.356);
     border-radius: 3rem;
-    box-shadow: 0.25rem 1.875rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0rem 0.25rem 1.875rem rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0.3125rem);
     -webkit-backdrop-filter: blur(0.3125rem);
     border: 0.0625rem solid rgba(96, 95, 95, 1);
@@ -48,7 +48,7 @@ body {
     outline: none;
     padding: 0.625rem 1.25rem;
     font-size: 2rem;
-    border-radius: 0.5625rem;
+    border-radius: 2rem;
     box-shadow: inset 0.125rem 0.3125rem 0.625rem rgb(0, 0, 0);
     color: #fff;
 }
