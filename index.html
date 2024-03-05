@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main class = "Calculator">
+    <input id = "screen" readonly>
+
+      <div id="keys">
+        <button id = "del" onclick="clearDisplay('C')"> <span class = "button_top">  C  </span> </button>
+        <button id = "del" onclick="deleteDisplay('b<-')"> <span class = "button_top">  <  </span> </button>
+        <button onclick="appendToDisplay('7')"> <span class = "button_top">  7  </span> </button>
+        <button onclick="appendToDisplay('8')"> <span class = "button_top">  8  </span> </button>
+        <button onclick="appendToDisplay('9')"> <span class = "button_top">  9  </span> </button>
+        <button onclick="appendToDisplay('*')"> <span class = "button_top">  x  </span> </button>
+        <button onclick="appendToDisplay('4')"> <span class = "button_top">  4  </span> </button>
+        <button onclick="appendToDisplay('5')"> <span class = "button_top">  5  </span> </button>
+        <button onclick="appendToDisplay('6')"> <span class = "button_top">  6  </span> </button>
+        <button onclick="appendToDisplay('-')"> <span class = "button_top">  -  </span> </button>
+        <button onclick="appendToDisplay('1')"> <span class = "button_top">  1  </span> </button>
+        <button onclick="appendToDisplay('2')"> <span class = "button_top">  2  </span> </button>
+        <button onclick="appendToDisplay('3')"> <span class = "button_top">  3  </span> </button>
+        <button onclick="appendToDisplay('+')"> <span class = "button_top">  +  </span> </button>
+        <button id = "enter" onclick="calculate('=')"> <span class = "button_top">  =  </span> </button>
+        <button onclick="appendToDisplay('0')"> <span class = "button_top">  0  </span> </button>
+        <button onclick="appendToDisplay('.')"> <span class = "button_top">  .  </span> </button>
+        <button onclick="appendToDisplay('/')">  <span class="button_top"> /</span></button>
+      </div>
+      <script src = "main.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.js"></script>
+
+
+    </div>
+  </main>
+</body>
+</html>

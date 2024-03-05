@@ -1,0 +1,124 @@
+body {
+    background-image: url("public/topography.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.Calculator {
+    width: 18.75rem;
+    background: rgba(96, 95, 95, 0.356);
+    border-radius: 3rem;
+    box-shadow: 0.25rem 1.875rem rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.3125rem);
+    -webkit-backdrop-filter: blur(0.3125rem);
+    border: 0.0625rem solid rgba(96, 95, 95, 1);
+    padding: 1.25rem 1.875rem;
+    margin-top: 1.875rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#del-key {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.3125rem;
+}
+
+#screen {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    width: 100;
+    height: 2.5rem;
+    justify-self: right;
+    margin-bottom: 1.25rem;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0.625rem 1.25rem;
+    font-size: 2rem;
+    border-radius: 0.5625rem;
+    box-shadow: inset 0.125rem 0.3125rem 0.625rem rgb(0, 0, 0);
+    color: #fff;
+}
+
+#del {
+    grid-column: span 2;
+    transition: background-color 0.3s;
+}
+
+#del:hover {
+    background-color: #ff7a7a98; /* Change background color on hover */
+}
+
+#enter {
+    transition: background-color 0.3s;
+}
+
+#enter:hover {
+    background-color: #7effe998; /* Change background color on hover */
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    /* Variables */
+    --button_radius: 1.5em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000b6;
+    font-size: 1.0625rem;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+    box-shadow: 0rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 0.125rem solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+    box-shadow: 0rem 0.125rem 0.25rem rgba(0, 0, 0, 0.6);
+}
+
+button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+}
+
+.input {
+    margin: 1.875rem;
+    background: none;
+    border: none;
+    outline: none;
+    max-width: 11.875rem;
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+    border-radius: 624.9375rem;
+    box-shadow: inset 0.125rem 0.3125rem 0.625rem rgb(5, 5, 5);
+    color: #fff;
+}
